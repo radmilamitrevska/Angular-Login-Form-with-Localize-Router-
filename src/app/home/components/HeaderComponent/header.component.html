@@ -1,0 +1,9 @@
+<div class="header full-width-container">
+  <div class="header-inline centered-container">
+    <div class="header-language">
+      <button (click)="changeLanguage('en')">EN</button>
+      <button (click)="changeLanguage('de')">DE</button>
+    </div>
+    <a [routerLink]="['/' | localize]"><img src="assets/images/gigaset-logo.png" class="logo"/></a>
+  </div>
+</div>

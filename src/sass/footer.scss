@@ -1,0 +1,14 @@
+/* Style for footer  */
+.footer {
+  width: 100%;
+  float: left;
+  background: $brand-primary;
+  height: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-inline {
+  color: #fff;
+  font-size: 20px;
+}

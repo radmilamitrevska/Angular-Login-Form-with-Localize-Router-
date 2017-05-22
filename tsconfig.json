@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "baseUrl": "",
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "declaration": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "src/app/ngfactory",
+    "rootDir": "./",
+    "skipLibCheck": true,
+    "typeRoots": [ "./node_modules/@types" ],
+    "types": [
+      "node",
+      "jquery"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "exclude": [
+    "node_modules",
+    "vendor",
+    "**/*.ngfactory.ts",
+    "**/*.shim.ts",
+    "src/app/**/bootstrap*.ts",
+    "src/app/**/polyfill.ts",
+    "dist"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "angularCompilerOptions": {
+    "genDir": "src/app/aot",
+    "debug": false,
+    "skipMetadataEmit" : true
+  }
+}

@@ -1,0 +1,150 @@
+/* Global style
+ * In this file you should write global roles
+ * Import this file using the following HTML or equivalent:
+*/
+
+/**************************
+*      GENERAL STYLES     *
+**************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+  text-decoration: none;
+  line-height: 100%;
+  text-align: left;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  background-color: $body-bg;
+  font-family: Helvetica
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:active {
+  outline: none;
+}
+
+* :focus {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+.full-width-container {
+  float: left;
+  width: 100%;
+}
+.centered-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -142px;
+  padding-top: 155px;
+  &:after {
+    height: 142px;
+    content: "";
+    display: block;
+  }
+}
+/* Buttons */
+.btn {
+  float: none;
+  display: inline-block;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  @include transition(background-color 0.3s);
+  &.btn-grey {
+    font-size: 30px;
+    background-color: #ccc;
+    &:hover {
+      background-color: darken(#ccc, 10%);
+    }
+  }
+  &.btn-primary {
+    background-color: $brand-primary;
+    &:hover {
+      background-color: darken($brand-primary, 10%);
+    }
+  }
+}
